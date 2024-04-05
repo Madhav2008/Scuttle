@@ -1,42 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:scuttle/utils/colors.dart';
-//
-// class SettingsScreen extends StatelessWidget {
-//   const SettingsScreen({Key? key}) : super(key: key);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         backgroundColor: mobileBackgroundColor,
-//         title: const Text(
-//           'Settings',
-//           style: TextStyle(
-//             fontWeight: FontWeight.bold,
-//             letterSpacing: 1.5,
-//             fontSize: 20,
-//           ),
-//         ),
-//         leading: IconButton(
-//           icon: const Icon(
-//             Icons.arrow_back_ios,
-//             color: primaryColor,
-//           ),
-//           onPressed: () {
-//             Navigator.pop(context);
-//           },
-//         ),
-//         centerTitle: false,
-//       ),
-//       body: const SingleChildScrollView(
-//         child: Column(
-//           children: [],
-//         ),
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -54,7 +15,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
+      appBar: AppBar(
         backgroundColor: mobileBackgroundColor,
         title: const Text(
           'Settings & privacy',
@@ -220,7 +181,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 size: 22,
               ),
               title: const Text(
-                'MikCode',
+                'ScutCode',
                 style: TextStyle(
                   fontSize: 18,
                 ),
@@ -491,46 +452,46 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   void _showRatingAppDialog() {
-  //   final ratingDialog = RatingDialog(
-  //     title: const Text(
-  //       'Rate Us ⭐',
-  //       textAlign: TextAlign.center,
-  //     ),
-  //     message: const Text(
-  //       'Tell others what you think?',
-  //       textAlign: TextAlign.center,
-  //     ),
-  //     image: Image.asset(
-  //       "assets/images/3D/banner_m.png",
-  //       height: 100,
-  //     ),
-  //     starSize: 35,
-  //     onSubmitted: (response) {
-  //       print(
-  //         'rating: ${response.rating}, '
-  //             'comment: ${response.comment}',
-  //       );
-  //
-  //       if (response.rating < 3.0) {
-  //         print('response.rating: ${response.rating}');
-  //       } else {
-  //         Container();
-  //       }
-  //     },
-  //     submitButtonText: 'Submit',
-  //     submitButtonTextStyle: const TextStyle(
-  //       fontSize: 18,
-  //       fontWeight: FontWeight.bold,
-  //     ),
-  //   );
-  //
-  //   showDialog(
-  //     context: context,
-  //     barrierDismissible: true,
-  //     builder: (context) => ratingDialog,
-  //   );
-  // }
-}
+    //   final ratingDialog = RatingDialog(
+    //     title: const Text(
+    //       'Rate Us ⭐',
+    //       textAlign: TextAlign.center,
+    //     ),
+    //     message: const Text(
+    //       'Tell others what you think?',
+    //       textAlign: TextAlign.center,
+    //     ),
+    //     image: Image.asset(
+    //       "assets/images/3D/banner_m.png",
+    //       height: 100,
+    //     ),
+    //     starSize: 35,
+    //     onSubmitted: (response) {
+    //       print(
+    //         'rating: ${response.rating}, '
+    //             'comment: ${response.comment}',
+    //       );
+    //
+    //       if (response.rating < 3.0) {
+    //         print('response.rating: ${response.rating}');
+    //       } else {
+    //         Container();
+    //       }
+    //     },
+    //     submitButtonText: 'Submit',
+    //     submitButtonTextStyle: const TextStyle(
+    //       fontSize: 18,
+    //       fontWeight: FontWeight.bold,
+    //     ),
+    //   );
+    //
+    //   showDialog(
+    //     context: context,
+    //     barrierDismissible: true,
+    //     builder: (context) => ratingDialog,
+    //   );
+    // }
+  }
 //
 // Widget _theme(BuildContext context) {
 //   if (Provider.of<ThemeProvider>(context).themeMode == ThemeMode.dark) {
