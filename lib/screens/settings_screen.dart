@@ -53,26 +53,26 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        leading: IconButton(
-          onPressed: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //     builder: (builder) => ProfileScreen(
-            //       uid: authController.user.uid,
-            //     ),
-            //   ),
-            // );
-          },
-          icon: const Icon(
-            Icons.arrow_back_ios_new,
+        appBar: AppBar(
+        backgroundColor: mobileBackgroundColor,
+        title: const Text(
+          'Settings & privacy',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            letterSpacing: 1.5,
+            fontSize: 20,
           ),
         ),
-        title: const Text(
-          'Settings and privacy',
+        leading: IconButton(
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: primaryColor,
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
+        centerTitle: false,
       ),
       body: SingleChildScrollView(
         child: Column(
