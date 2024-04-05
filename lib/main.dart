@@ -7,7 +7,6 @@ import 'package:scuttle/responsive/mobile_screen_layout.dart';
 import 'package:scuttle/responsive/responsive_layout.dart';
 import 'package:scuttle/responsive/web_screen_layout.dart';
 import 'package:scuttle/screens/login_screen.dart';
-import 'package:scuttle/screens/settings_screen.dart';
 import 'package:scuttle/utils/colors.dart';
 import 'package:provider/provider.dart';
 
@@ -57,11 +56,10 @@ class MyApp extends StatelessWidget {
               // Checking if the snapshot has any data or not
               if (snapshot.hasData) {
                 // if snapshot has data which means user is logged in then we check the width of screen and accordingly display the screen layout
-                // return const ResponsiveLayout(
-                //   mobileScreenLayout: MobileScreenLayout(),
-                //   webScreenLayout: WebScreenLayout(),
-                // );
-                return SettingsScreen();
+                return const ResponsiveLayout(
+                  mobileScreenLayout: MobileScreenLayout(),
+                  webScreenLayout: WebScreenLayout(),
+                );
               } else if (snapshot.hasError) {
                 return Center(
                   child: Text('${snapshot.error}'),
