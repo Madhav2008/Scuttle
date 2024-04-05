@@ -118,42 +118,42 @@ class _AddPostScreenState extends State<AddPostScreen> {
     final UserProvider userProvider = Provider.of<UserProvider>(context);
 
     return _file == null
-        ? InkWell(
+        ? Center(
+          child: InkWell(
             onTap: () {
               _selectImage(context);
             },
-            child: Center(
-              child: Container(
-                width: MediaQuery.of(context).size.width / 1.5,
-                height: 70,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: primaryColor,
+            child: Container(
+              width: MediaQuery.of(context).size.width / 1.5,
+              height: 70,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: primaryColor,
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Add Post',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                      letterSpacing: 1,
+                    ),
                   ),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Add Post',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w500,
-                        letterSpacing: 1,
-                      ),
-                    ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Icon(
-                      Icons.upload,
-                    ),
-                  ],
-                ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Icon(
+                    Icons.upload,
+                  ),
+                ],
               ),
             ),
-          )
+          ),
+        )
         : Scaffold(
             appBar: AppBar(
               backgroundColor: mobileBackgroundColor,
