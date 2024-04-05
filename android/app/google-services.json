@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "282372354180",
+    "project_id": "zoom-clone-2f1ad",
+    "storage_bucket": "zoom-clone-2f1ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282372354180:android:6d046a20dda4a3883a92d1",
+        "android_client_info": {
+          "package_name": "com.madhav.scuttle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282372354180-7k4aav89fhgt30cp5v4nb266nekmddpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBchgFzBlTbE--6GqA06oJITVSIPuf-tsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282372354180-7k4aav89fhgt30cp5v4nb266nekmddpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
