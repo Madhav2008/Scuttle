@@ -40,6 +40,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:scuttle/utils/colors.dart';
 // import 'package:rating_dialog/rating_dialog.dart';
 
 class SettingsScreen extends StatefulWidget {
